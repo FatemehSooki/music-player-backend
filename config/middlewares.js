@@ -1,12 +1,12 @@
 module.exports = [
   'strapi::logger',
   'strapi::errors',
-  {
-    name: 'strapi::cors',
-    config: {
-      origin: ['http://localhost:3000', 'https://your-vercel-app.vercel.app'],
-      credentials: true,
-    },
+{
+  name: 'strapi::cors',
+  config: {
+    origin: ['http://localhost:3000', 'https://music-player-frontend-1gmy.vercel.app'],
+    credentials: true,
+  },
   },
   'strapi::security',
   'strapi::poweredBy',
