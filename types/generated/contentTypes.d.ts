@@ -456,11 +456,9 @@ export interface ApiSongSong extends Struct.CollectionTypeSchema {
   attributes: {
     album: Schema.Attribute.String;
     artist: Schema.Attribute.String;
-    artistCover: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
-    audio: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    cover: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    artistCover: Schema.Attribute.String;
+    audio: Schema.Attribute.String;
+    cover: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
