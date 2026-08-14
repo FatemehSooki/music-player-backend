@@ -12,7 +12,8 @@
     "start": "strapi start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
-    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+    "upgrade:dry": "npx @strapi/upgrade latest --dry",
+    "transfer": "strapi transfer --to https://music-player-backend-bobe.onrender.com/admin --to-token d106ee9d81cd6316fd44a2521c105791add5a26d59bc428a0259cb7f5114bcb1824a119957a0017edb20025af6f9e3ed47b0bbe1883972769a227f7aa5e74b9c2f7910b5734071e642c50983a2b034b847bea2579c3cc2a6bc77c3acf9c7613cd67002c37fecd47347ea63588089fab8ca8f9ac5c6a8d6fbac049cc659f90e56 --force --only content"
   },
   "dependencies": {
     "@strapi/database": "5.51.0",
