@@ -4,10 +4,13 @@ module.exports = [
 {
   name: 'strapi::cors',
   config: {
-    origin: ['http://localhost:3000', 'https://music-player-frontend-1gmy.vercel.app'],
+    origin: [
+      'http://localhost:3000', 
+      'https://music-player-frontend-eight-nu.vercel.app'
+    ],
     credentials: true,
   },
-  },
+},
   'strapi::security',
   'strapi::poweredBy',
   'strapi::query',
